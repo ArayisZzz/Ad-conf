@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
+      - name: download
+        run: ./Push.sh
       - name: Issue-conf
         run: python ad.py
       - name: release
