@@ -18,7 +18,7 @@ rules_url = [
             # '2_without_easylist.txt',
             # '11.txt',
             # 'urlhaus-filter-ag-online.txt',
-             '224.txt',
+            # '224.txt',
              #Anti-AD
              'anti-ad-adguard.txt'
              ]
