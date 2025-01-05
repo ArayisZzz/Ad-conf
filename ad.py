@@ -4,7 +4,7 @@ import time
 
 rules_url = ['filters.txt',
              #Ads
-             'badlists.txt',
+             'badware.min.txt',
              #Badware risks
             # 'privacy.txt',
              #Privacy
@@ -26,7 +26,7 @@ f2.write("[General]\nipv6 = false\nbypass-system = true\nskip-proxy = 192.168.0.
 f2.write("[Rule]\n")
 
 for url in rules_url:
-    f1 = open(url,"r",encoding='utf-8')
+    f1 = open(url,'r',encoding='utf-8')
     for str in f1:
         flag = 0
         it = re.finditer('^\|\|[0-9.]+\^$',str)

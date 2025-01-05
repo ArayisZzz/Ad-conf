@@ -1,13 +1,13 @@
 #!/bin/bash
-curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt
+curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/filters.txt
 #Ads
-curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/badlists.txt
+curl -O https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
 #Badware risks
-curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/privacy.txt
+curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
 #Privacy
-curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/quick-fixes.txt
+curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/quick-fixes.txt
 #Quick fixes
-curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt
+curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/unbreak.txt
 #Unbreak
 curl -O https://easylist.to/easylist/easylist.txt
 #EasyList

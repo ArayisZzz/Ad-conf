@@ -12,11 +12,11 @@ jobs:
       - uses: actions/checkout@v4.2.2
       - name: download
         run: |
-          curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt
-          curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/badlists.txt
-        #  curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/privacy.txt
-        #  curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/quick-fixes.txt
-        #  curl -O https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt
+          curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/filters.txt
+          curl -O https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
+        #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
+        #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/quick-fixes.txt
+        #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/unbreak.txt
         #  curl -O https://easylist.to/easylist/easylist.txt
         #  curl -O https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
         #  curl -O https://filters.adtidy.org/extension/ublock/filters/11.txt
