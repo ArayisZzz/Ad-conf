@@ -32,7 +32,7 @@ jobs:
           git config --global user.name 'ArayisZzz'
           git config user.email 'ArayisZzz@users.noreply.github.com'
           git add ad.conf
-          git commit -am "Build dayily"
+          git commit -am "Build daily"
           git push origin main 
           
        
