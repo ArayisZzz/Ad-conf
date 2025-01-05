@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
-      - name: Fetch-txt
-        run: ./Pull-txt.sh
       - name: Issue-conf
         run: python ad.py
       - name: release
