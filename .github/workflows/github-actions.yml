@@ -29,10 +29,10 @@ jobs:
         run: python3 ad.py
       - name: release
         run: |
-          git config --global user.name 'ArayisZzz'
-          git config user.email 'ArayisZzz@users.noreply.github.com'
-          git add ad.conf
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -u ad.conf
           git commit -m "Build daily"
-          git push -f origin main 
+          git push
           
        
