@@ -2,21 +2,22 @@ import re
 import requests
 import time
 
-rules_url = ['filters.txt',
+rules_url = [
+            # 'filters.txt',
              #Ads
-             'badware.min.txt',
+            # 'badware.min.txt',
              #Badware risks
-             'privacy.txt',
+            # 'privacy.txt',
              #Privacy
-             'quick-fixes.txt',
+            # 'quick-fixes.txt',
              #Quick fixes
-             'unbreak.txt',
+            # 'unbreak.txt',
              #Unbreak
-             'easylist.txt',
+            # 'easylist.txt',
              #EasyList
-             '2_without_easylist.txt',
-             '11.txt',
-             'urlhaus-filter-ag-online.txt',
+            # '2_without_easylist.txt',
+            # '11.txt',
+            # 'urlhaus-filter-ag-online.txt',
              '224.txt',
              #Anti-AD
              'anti-ad-adguard.txt'

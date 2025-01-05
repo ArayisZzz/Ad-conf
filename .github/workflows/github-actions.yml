@@ -14,17 +14,17 @@ jobs:
       - uses: actions/checkout@v4.2.2
       - name: download
         run: |
-          curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/filters.txt
-          curl -O https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
-          curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
-          curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/quick-fixes.txt
-          curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/unbreak.txt
-          curl -O https://easylist.to/easylist/easylist.txt
-          curl -O https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
-          curl -O https://filters.adtidy.org/extension/ublock/filters/11.txt
-          curl -O https://curbengh.github.io/malware-filter/urlhaus-filter-ag-online.txt
           curl -O https://filters.adtidy.org/extension/ublock/filters/224.txt
           curl -O https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
+        #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/filters.txt
+        #  curl -O https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
+        #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
+        #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/quick-fixes.txt
+        #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/unbreak.txt
+        #  curl -O https://easylist.to/easylist/easylist.txt
+        #  curl -O https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
+        #  curl -O https://filters.adtidy.org/extension/ublock/filters/11.txt
+        #  curl -O https://curbengh.github.io/malware-filter/urlhaus-filter-ag-online.txt
       - name: Issue-conf
         run: python3 ad.py
       - name: release
@@ -32,7 +32,7 @@ jobs:
           git config --global user.name 'ArayisZzz'
           git config user.email 'ArayisZzz@users.noreply.github.com'
           git add ad.conf
-          git commit -am "Build dayily"
+          git commit -am "Build daily"
           git push origin main 
           
        
