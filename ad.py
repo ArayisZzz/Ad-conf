@@ -23,6 +23,8 @@ rules_url = [
              'anti-ad-adguard.txt'
              ]
 f2 = open("ad.conf",'a')
+t = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime())
+f2.write("This config is generated on " +t+"\n")
 f2.write("[General]\nipv6 = false\nbypass-system = true\nskip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, fe80::/10, fc00::/7, localhost, *.local, *.lan, *.internal, e.crashlytics.com, captive.apple.com, sequoia.apple.com, seed-sequoia.siri.apple.com, *.ls.apple.com\nbypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,233.252.0.0/24,224.0.0.0/4,255.255.255.255/32,::1/128,::ffff:0:0/96,::ffff:0:0:0/96,64:ff9b::/96,64:ff9b:1::/48,100::/64,2001::/32,2001:20::/28,2001:db8::/32,2002::/16,3fff::/20,5f00::/16,fc00::/7,fe80::/10,ff00::/8\ndns-server = https://dns.adguard-dns.com/dns-query, https://security.cloudflare-dns.com/dns-query, https://doh.pub/dns-query\n")
 f2.write("[Rule]\n")
 
