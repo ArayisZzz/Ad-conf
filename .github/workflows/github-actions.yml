@@ -39,7 +39,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add ad.conf
-          git commit -m "Build daily"
+          git commit -am "Build daily"
           git push
           
        
