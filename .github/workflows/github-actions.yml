@@ -17,9 +17,9 @@ jobs:
           ref: ''
           path: ''
       - name: download
-        run: |
-          curl -O https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
-          cat /dev/null > ad.conf
+        run: ./Pull.sh
+          #curl -O https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
+          #cat /dev/null > ad.conf
         #  curl -O https://filters.adtidy.org/extension/ublock/filters/224.txt
         #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/filters.txt
         #  curl -O https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
