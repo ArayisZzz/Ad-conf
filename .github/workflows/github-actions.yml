@@ -2,9 +2,9 @@ name: GitHub Actions
 on:
   schedule:
     - cron: '0 22 * * *'
-#  push:
-#    branches:
-#      - main
+  push:
+    branches:
+      - main
 permissions:
   contents: write
 jobs:
@@ -14,6 +14,7 @@ jobs:
       - name: download
         run: |
           curl -O https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
+          cat /dev/null > ad.conf
         #  curl -O https://filters.adtidy.org/extension/ublock/filters/224.txt
         #  curl -O https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/filters.txt
         #  curl -O https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
@@ -33,9 +34,9 @@ jobs:
           path: ''
       - name: release
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -u ad.conf
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add ad.conf
           git commit -m "Build daily"
           git push
           

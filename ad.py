@@ -39,7 +39,7 @@ for url in rules_url:
             break
         it = re.finditer('^\|\|[\w.-]+\^$',str)
         for match in it:
-            f2.write("DOMAIN_SUFFIX,"+match.string[2:len(match.string)-2]+",REJECT\n")
+            f2.write("DOMAIN-SUFFIX,"+match.string[2:len(match.string)-2]+",REJECT\n")
         #time.sleep(1)
     f1.close
 #f1 = open("11.txt","r",encoding='utf-8')
